@@ -1,0 +1,16 @@
+PODS:
+  - GPUUtilization (0.1.0)
+
+DEPENDENCIES:
+  - GPUUtilization (from `../`)
+
+EXTERNAL SOURCES:
+  GPUUtilization:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GPUUtilization: 7a3d4547340036421623e13833156920f6b1fdd9
+
+PODFILE CHECKSUM: 3694ed88f5d3e13ad2e72c26dd20319b351c1989
+
+COCOAPODS: 1.5.3

@@ -14,15 +14,21 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* RTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* RTAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* RTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* RTViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9CB2D577215397020081176F /* RTGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2D576215397020081176F /* RTGameViewController.m */; };
+		9CB2D57A2153977F0081176F /* RTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2D5792153977F0081176F /* RTTableViewController.m */; };
+		9CB2D57D21539A950081176F /* RTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2D57C21539A950081176F /* RTRootViewController.m */; };
+		9CB2D5812153A06A0081176F /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB2D562215395E60081176F /* art.scnassets */; };
+		9CB2D5822153A0740081176F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		9CB2D5C12153A13D0081176F /* RTMetalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2D5C02153A13D0081176F /* RTMetalViewController.m */; };
+		9CB2D5C22153A1460081176F /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2D5A92153A0D70081176F /* Renderer.m */; };
+		9CB2D5C32153A1750081176F /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2D5AE2153A0D70081176F /* Shaders.metal */; };
 		F54827074FFAADB0AD5B3565 /* Pods_GPUUtilization_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40E255125B8E918D8536AB6 /* Pods_GPUUtilization_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,8 +55,6 @@
 		6003F59B195388D20070C39A /* GPUUtilization-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPUUtilization-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* RTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* RTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* RTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* RTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* GPUUtilization_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPUUtilization_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -58,13 +62,26 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6E7CA35EBC465C89D2DE788D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6E7CA35EBC465C89D2DE788D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85BC099EF4109F2F37CF5FB1 /* Pods-GPUUtilization_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUUtilization_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPUUtilization_Tests/Pods-GPUUtilization_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CB2D562215395E60081176F /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		9CB2D575215397020081176F /* RTGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTGameViewController.h; sourceTree = "<group>"; };
+		9CB2D576215397020081176F /* RTGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTGameViewController.m; sourceTree = "<group>"; };
+		9CB2D5782153977F0081176F /* RTTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTTableViewController.h; sourceTree = "<group>"; };
+		9CB2D5792153977F0081176F /* RTTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTTableViewController.m; sourceTree = "<group>"; };
+		9CB2D57B21539A950081176F /* RTRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTRootViewController.h; sourceTree = "<group>"; };
+		9CB2D57C21539A950081176F /* RTRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTRootViewController.m; sourceTree = "<group>"; };
+		9CB2D5A82153A0D70081176F /* Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		9CB2D5A92153A0D70081176F /* Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		9CB2D5AE2153A0D70081176F /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		9CB2D5B02153A0D70081176F /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		9CB2D5BF2153A13D0081176F /* RTMetalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTMetalViewController.h; sourceTree = "<group>"; };
+		9CB2D5C02153A13D0081176F /* RTMetalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTMetalViewController.m; sourceTree = "<group>"; };
 		B40E255125B8E918D8536AB6 /* Pods_GPUUtilization_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPUUtilization_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C341FF313B32872FDB6BC805 /* GPUUtilization.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GPUUtilization.podspec; path = ../GPUUtilization.podspec; sourceTree = "<group>"; };
-		D48A032BCD980F15F021F474 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C341FF313B32872FDB6BC805 /* GPUUtilization.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GPUUtilization.podspec; path = ../GPUUtilization.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D48A032BCD980F15F021F474 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DE3866649ACD608B15A24958 /* Pods-GPUUtilization_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUUtilization_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPUUtilization_Example/Pods-GPUUtilization_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E63A0FF94F0DE6285548D660 /* Pods_GPUUtilization_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPUUtilization_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,13 +160,24 @@
 		6003F593195388D20070C39A /* Example for GPUUtilization */ = {
 			isa = PBXGroup;
 			children = (
+				9CB2D562215395E60081176F /* art.scnassets */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				9CB2D5A82153A0D70081176F /* Renderer.h */,
+				9CB2D5A92153A0D70081176F /* Renderer.m */,
 				6003F59C195388D20070C39A /* RTAppDelegate.h */,
 				6003F59D195388D20070C39A /* RTAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* RTViewController.h */,
-				6003F5A6195388D20070C39A /* RTViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
+				9CB2D575215397020081176F /* RTGameViewController.h */,
+				9CB2D576215397020081176F /* RTGameViewController.m */,
+				9CB2D5BF2153A13D0081176F /* RTMetalViewController.h */,
+				9CB2D5C02153A13D0081176F /* RTMetalViewController.m */,
+				9CB2D57B21539A950081176F /* RTRootViewController.h */,
+				9CB2D57C21539A950081176F /* RTRootViewController.m */,
+				9CB2D5782153977F0081176F /* RTTableViewController.h */,
+				9CB2D5792153977F0081176F /* RTTableViewController.m */,
+				9CB2D5AE2153A0D70081176F /* Shaders.metal */,
+				9CB2D5B02153A0D70081176F /* ShaderTypes.h */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for GPUUtilization";
@@ -244,9 +272,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RT;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = rickytan;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 36X754M3QH;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -276,8 +307,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB2D5822153A0740081176F /* LaunchScreen.storyboard in Resources */,
+				9CB2D5812153A06A0081176F /* art.scnassets in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -299,15 +331,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-GPUUtilization_Tests-checkManifestLockResult.txt",
 			);
@@ -321,15 +349,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GPUUtilization_Example/Pods-GPUUtilization_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GPUUtilization/GPUUtilization.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUUtilization.framework",
 			);
@@ -343,15 +367,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-GPUUtilization_Example-checkManifestLockResult.txt",
 			);
@@ -367,9 +387,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB2D5C32153A1750081176F /* Shaders.metal in Sources */,
+				9CB2D577215397020081176F /* RTGameViewController.m in Sources */,
 				6003F59E195388D20070C39A /* RTAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* RTViewController.m in Sources */,
+				9CB2D5C22153A1460081176F /* Renderer.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				9CB2D57D21539A950081176F /* RTRootViewController.m in Sources */,
+				9CB2D5C12153A13D0081176F /* RTMetalViewController.m in Sources */,
+				9CB2D57A2153977F0081176F /* RTTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,19 +452,32 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -452,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -467,25 +505,38 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -497,6 +548,7 @@
 			baseConfigurationReference = 3199CB4861D35D71B7539700 /* Pods-GPUUtilization_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 36X754M3QH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GPUUtilization/GPUUtilization-Prefix.pch";
 				INFOPLIST_FILE = "GPUUtilization/GPUUtilization-Info.plist";
@@ -512,6 +564,7 @@
 			baseConfigurationReference = DE3866649ACD608B15A24958 /* Pods-GPUUtilization_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 36X754M3QH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GPUUtilization/GPUUtilization-Prefix.pch";
 				INFOPLIST_FILE = "GPUUtilization/GPUUtilization-Info.plist";
