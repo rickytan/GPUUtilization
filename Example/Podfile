@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GPUUtilization_Example' do
+  pod 'GPUUtilization', :path => '../'
+
+  target 'GPUUtilization_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
