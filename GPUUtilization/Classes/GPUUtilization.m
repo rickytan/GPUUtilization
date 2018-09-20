@@ -106,7 +106,7 @@ GPU_UTILI_KEY(TextureCount, textureCount)
 
 + (float)gpuUsage
 {
-    return [[self utilizeDictionary][@"Device Utilization %"] floatValue];
+    return [[self utilizeDictionary][GPUDeviceUtilizationKey] floatValue];
 }
 
 + (GPUUtilization *)current

@@ -22,32 +22,6 @@
 
 #import <Foundation/Foundation.h>
 
-//{
-//    CommandBufferRenderCount = 213;
-//    "Device Utilization %" = 27;
-//    "Renderer Utilization %" = 21;
-//    SplitSceneCount = 0;
-//    TiledSceneBytes = 151552;
-//    "Tiler Utilization %" = 27;
-//    agpTextureCreationBytes = 524288;
-//    agprefTextureCreationBytes = 16384;
-//    contextGLCount = 0;
-//    finishGLWaitTime = 0;
-//    freeToAllocGPUAddressWaitTime = 0;
-//    gartMapInBytesPerSample = 688128;
-//    gartMapOutBytesPerSample = 8257536;
-//    gartUsedBytes = 34521088;
-//    hardwareWaitTime = 0;
-//    iosurfaceTextureCreationBytes = 0;
-//    oolTextureCreationBytes = 0;
-//    recoveryCount = 0;
-//    stdTextureCreationBytes = 0;
-//    textureCount = 1259;
-//}
-
-
-
-
 /**
  @warning DO NOT INTEGRATE THIS IN APPSTORE VERSION, it will be @b rejected!
  */

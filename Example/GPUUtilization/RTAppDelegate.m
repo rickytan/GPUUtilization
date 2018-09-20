@@ -16,7 +16,7 @@
 {
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        UILabel     * gpuLabel = [[UILabel alloc] init];
+        UILabel * gpuLabel = [[UILabel alloc] init];
         gpuLabel.backgroundColor = [UIColor whiteColor];
         gpuLabel.font = [UIFont fontWithName:@"Courier" size:14];
         gpuLabel.text = @"GPU:  0%";
@@ -25,6 +25,7 @@
         
         CGRect rect = gpuLabel.frame;
         rect.origin.x = 100.f;
+        rect.origin.y = application.statusBarFrame.size.height;
         gpuLabel.frame = rect;
         [self.window addSubview:gpuLabel];
         

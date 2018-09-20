@@ -29,6 +29,7 @@
 		9CB2D5C12153A13D0081176F /* RTMetalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2D5C02153A13D0081176F /* RTMetalViewController.m */; };
 		9CB2D5C22153A1460081176F /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2D5A92153A0D70081176F /* Renderer.m */; };
 		9CB2D5C32153A1750081176F /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2D5AE2153A0D70081176F /* Shaders.metal */; };
+		9CBC6DB82153DC9500AB206A /* RTGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBC6DB72153DC9500AB206A /* RTGradientView.m */; };
 		F54827074FFAADB0AD5B3565 /* Pods_GPUUtilization_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40E255125B8E918D8536AB6 /* Pods_GPUUtilization_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,8 @@
 		9CB2D5B02153A0D70081176F /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
 		9CB2D5BF2153A13D0081176F /* RTMetalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTMetalViewController.h; sourceTree = "<group>"; };
 		9CB2D5C02153A13D0081176F /* RTMetalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTMetalViewController.m; sourceTree = "<group>"; };
+		9CBC6DB62153DC9500AB206A /* RTGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTGradientView.h; sourceTree = "<group>"; };
+		9CBC6DB72153DC9500AB206A /* RTGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTGradientView.m; sourceTree = "<group>"; };
 		B40E255125B8E918D8536AB6 /* Pods_GPUUtilization_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPUUtilization_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C341FF313B32872FDB6BC805 /* GPUUtilization.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GPUUtilization.podspec; path = ../GPUUtilization.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D48A032BCD980F15F021F474 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -170,6 +173,8 @@
 				6003F59D195388D20070C39A /* RTAppDelegate.m */,
 				9CB2D575215397020081176F /* RTGameViewController.h */,
 				9CB2D576215397020081176F /* RTGameViewController.m */,
+				9CBC6DB62153DC9500AB206A /* RTGradientView.h */,
+				9CBC6DB72153DC9500AB206A /* RTGradientView.m */,
 				9CB2D5BF2153A13D0081176F /* RTMetalViewController.h */,
 				9CB2D5C02153A13D0081176F /* RTMetalViewController.m */,
 				9CB2D57B21539A950081176F /* RTRootViewController.h */,
@@ -390,6 +395,7 @@
 				9CB2D5C32153A1750081176F /* Shaders.metal in Sources */,
 				9CB2D577215397020081176F /* RTGameViewController.m in Sources */,
 				6003F59E195388D20070C39A /* RTAppDelegate.m in Sources */,
+				9CBC6DB82153DC9500AB206A /* RTGradientView.m in Sources */,
 				9CB2D5C22153A1460081176F /* Renderer.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				9CB2D57D21539A950081176F /* RTRootViewController.m in Sources */,
