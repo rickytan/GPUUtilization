@@ -5,11 +5,14 @@
 [![License](https://img.shields.io/cocoapods/l/GPUUtilization.svg?style=flat)](https://cocoapods.org/pods/GPUUtilization)
 [![Platform](https://img.shields.io/cocoapods/p/GPUUtilization.svg?style=flat)](https://cocoapods.org/pods/GPUUtilization)
 
-## Example
+This project calls methods from `IOKit` to get the realtime GPU utilization of a iOS device, it maybe helpful for debug usage.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+**Warning:!!!**
+> Do not integrate this on a Appstore version, you will be REJECTED.
 
-## Requirements
+![img_1584](https://user-images.githubusercontent.com/1250207/45858576-a5d5e980-bd90-11e8-812d-9ee089709900.PNG)
+
+![img_1585](https://user-images.githubusercontent.com/1250207/45858577-a5d5e980-bd90-11e8-8687-e391954acb4a.PNG)
 
 ## Installation
 
@@ -17,7 +20,7 @@ GPUUtilization is available through [CocoaPods](https://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'GPUUtilization'
+pod 'GPUUtilization', :configurations => ['Debug']
 ```
 
 ## Author
