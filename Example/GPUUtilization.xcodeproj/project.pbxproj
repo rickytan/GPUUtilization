@@ -21,6 +21,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9C9E5D102154944C004745F4 /* RTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E5D0F2154944C004745F4 /* RTCollectionViewController.m */; };
 		9CB2D577215397020081176F /* RTGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2D576215397020081176F /* RTGameViewController.m */; };
 		9CB2D57A2153977F0081176F /* RTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2D5792153977F0081176F /* RTTableViewController.m */; };
 		9CB2D57D21539A950081176F /* RTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2D57C21539A950081176F /* RTRootViewController.m */; };
@@ -67,6 +68,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85BC099EF4109F2F37CF5FB1 /* Pods-GPUUtilization_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUUtilization_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPUUtilization_Tests/Pods-GPUUtilization_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C9E5D0E2154944C004745F4 /* RTCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCollectionViewController.h; sourceTree = "<group>"; };
+		9C9E5D0F2154944C004745F4 /* RTCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCollectionViewController.m; sourceTree = "<group>"; };
 		9CB2D562215395E60081176F /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		9CB2D575215397020081176F /* RTGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTGameViewController.h; sourceTree = "<group>"; };
 		9CB2D576215397020081176F /* RTGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTGameViewController.m; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 				9CB2D5A92153A0D70081176F /* Renderer.m */,
 				6003F59C195388D20070C39A /* RTAppDelegate.h */,
 				6003F59D195388D20070C39A /* RTAppDelegate.m */,
+				9C9E5D0E2154944C004745F4 /* RTCollectionViewController.h */,
+				9C9E5D0F2154944C004745F4 /* RTCollectionViewController.m */,
 				9CB2D575215397020081176F /* RTGameViewController.h */,
 				9CB2D576215397020081176F /* RTGameViewController.m */,
 				9CBC6DB62153DC9500AB206A /* RTGradientView.h */,
@@ -392,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9E5D102154944C004745F4 /* RTCollectionViewController.m in Sources */,
 				9CB2D5C32153A1750081176F /* Shaders.metal in Sources */,
 				9CB2D577215397020081176F /* RTGameViewController.m in Sources */,
 				6003F59E195388D20070C39A /* RTAppDelegate.m in Sources */,

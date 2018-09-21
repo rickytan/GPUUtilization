@@ -8,11 +8,11 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GPUUtilization'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of GPUUtilization.'
+  s.version          = '0.5.0'
+  s.summary          = 'measure GPU hardware utilization on iOS Devices'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                       This project is used to measure GPU Usage on iOS Devices within apps.
                        DESC
 
   s.homepage         = 'https://github.com/rickytan/GPUUtilization'

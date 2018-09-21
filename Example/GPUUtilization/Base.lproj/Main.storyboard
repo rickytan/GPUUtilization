@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9aB-gz-0ab">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9aB-gz-0ab">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,7 +37,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="3Ry-k2-avo" kind="show" id="p3U-9d-YsR"/>
+                                            <segue destination="RYv-M5-BKe" kind="show" id="NQ4-E1-O8P"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="ebE-cI-rWW" style="IBUITableViewCellStyleDefault" id="JB6-T6-oMx">
@@ -128,6 +127,66 @@
             </objects>
             <point key="canvasLocation" x="665" y="592"/>
         </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="PkG-ot-Jdb">
+            <objects>
+                <collectionViewController id="RYv-M5-BKe" customClass="RTCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="aGy-DG-TkC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mlI-UY-HqK">
+                            <size key="itemSize" width="118" height="141"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ETb-Pn-eb6">
+                                <rect key="frame" x="0.0" y="0.0" width="118" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="118" height="141"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbE-Fw-Ohb">
+                                            <rect key="frame" x="20" y="5" width="78" height="123"/>
+                                            <color key="backgroundColor" red="1" green="0.49803921568627452" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                    <real key="value" value="0.90000000000000002"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                    <size key="value" width="15" height="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shaodwRadius">
+                                                    <integer key="value" value="40"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="cbE-Fw-Ohb" secondAttribute="bottom" constant="5" id="JxR-yt-KKH"/>
+                                    <constraint firstItem="cbE-Fw-Ohb" firstAttribute="leading" secondItem="ETb-Pn-eb6" secondAttribute="leadingMargin" constant="12" id="QQi-t0-Qby"/>
+                                    <constraint firstItem="cbE-Fw-Ohb" firstAttribute="top" secondItem="ETb-Pn-eb6" secondAttribute="top" constant="5" id="T7I-XM-Jcw"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="cbE-Fw-Ohb" secondAttribute="trailing" constant="12" id="pG2-pf-jJN"/>
+                                </constraints>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="RYv-M5-BKe" id="cMa-P7-TKk"/>
+                            <outlet property="delegate" destination="RYv-M5-BKe" id="wXw-eg-7q6"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asy-hm-c2L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664.79999999999995" y="-745.27736131934034"/>
+        </scene>
         <!--Metal View Controller-->
         <scene sceneID="glI-e6-dr0">
             <objects>
@@ -156,32 +215,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vzo-Wd-wtX" id="d14-q4-2CM">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbE-Fw-Ohb">
-                                            <rect key="frame" x="31" y="21" width="313" height="118"/>
-                                            <color key="backgroundColor" red="1" green="0.49803921568627452" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                    <real key="value" value="0.90000000000000002"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                    <size key="value" width="15" height="4"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shaodwRadius">
-                                                    <integer key="value" value="40"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                    <integer key="value" value="10"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="cbE-Fw-Ohb" firstAttribute="top" secondItem="d14-q4-2CM" secondAttribute="topMargin" constant="10" id="7uc-Cw-EMN"/>
-                                        <constraint firstItem="cbE-Fw-Ohb" firstAttribute="leading" secondItem="d14-q4-2CM" secondAttribute="leadingMargin" constant="15" id="bsG-O3-J8W"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="cbE-Fw-Ohb" secondAttribute="bottom" constant="10" id="c3E-Vb-Nvf"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="cbE-Fw-Ohb" secondAttribute="trailing" constant="15" id="iYk-J2-wy4"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Mask" rowHeight="160" id="e58-w7-cXu">
@@ -274,7 +307,4 @@
             <point key="canvasLocation" x="-1055" y="491"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="p3U-9d-YsR"/>
-    </inferredMetricsTieBreakers>
 </document>

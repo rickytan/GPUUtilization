@@ -114,7 +114,7 @@ GPU_UTILI_KEY(TextureCount, textureCount)
     return [[self alloc] initWithDictionary:[self utilizeDictionary]];
 }
 
-+ (void)fetchCurrentUtilization:(void (^)(GPUUtilization *))block
++ (void)fetchCurrentUtilization:(NS_NOESCAPE void (^)(GPUUtilization *))block
 {
     !block ?: block([self current]);
 }
