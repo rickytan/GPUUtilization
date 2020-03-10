@@ -22,6 +22,10 @@
 
 #import <Foundation/Foundation.h>
 
+#ifndef NS_NOESCAPE
+#define NS_NOESCAPE
+#endif
+
 /**
  @warning DO NOT INTEGRATE THIS IN APPSTORE VERSION, it will be @b rejected!
  */
@@ -36,9 +40,12 @@
 @property (nonatomic, readonly) NSInteger renderCount;
 @property (nonatomic, readonly) NSInteger recoveryCount;
 @property (nonatomic, readonly) NSInteger textureCount;
-
+#if __has_feature(objc_class_property)
 @property (nonatomic, class, readonly) float gpuUsage;
+#else
++ (float)gpuUsage;
+#endif
 
-+ (void)fetchCurrentUtilization:(NS_NOESCAPE void(^)(GPUUtilization *current))block;
++ (void)fetchCurrentUtilization:(void(NS_NOESCAPE^)(GPUUtilization *current))block;
 
 @end
